@@ -5,8 +5,6 @@
 body {
   background-color: #ccc;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   margin: 60px auto;
   color: #fff;
 }
@@ -25,8 +23,8 @@ body {
   background-repeat: no-repeat;
 }
 #header-content {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  /* border-top-left-radius: 20px;
+  border-top-right-radius: 20px; */
   background: rgb(0, 0, 0);
   background: linear-gradient(
     180deg,
@@ -89,11 +87,7 @@ p,
   padding-left: 30px;
   padding-right: 30px;
 }
-h1 {
-  text-align: center;
-}
-h1,
-h3,
+
 p {
   margin-bottom: 30px;
 }
