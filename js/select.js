@@ -14,16 +14,7 @@ const renderSelect = (data) => {
   });
 };
 
-const renderMovies = (data) => {
-  
-}
 
 fetch(`${URL}/genre/movie/list?api_key=${API_KEY}`)
   .then((response) => response.json())
   .then((data) => renderSelect(data));
-
-  fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`)
-    .then((response) => response.json())
-    .then((data) => {
-      renderMovies(data);
-    });
