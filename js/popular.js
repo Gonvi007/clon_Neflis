@@ -2,16 +2,22 @@ const renderMovies = (data) => {
     let movies = data.results;
     movies.forEach((movie) => {
       let poster = `${IMG_PREFIX}${movie.poster_path}`;
-      let img = document.createElement("img");
       // img.src = poster;
-  
+      let div = document.createElement("div");
+      div.classList.add("col-3", "mb-4");
+
+      let img = document.createElement("img");
       /*
       Una forma para no tener tanta información.
       img.setAttribute("src",`${IMG_PREFIX}${movie.poster_path}`);
       */
+      img.classList.add("img-fluid");
       img.setAttribute("src", poster);
       img.setAttribute("alt", movie.title);
-      document.querySelector("#popular").append(img);
+
+      div.append(img);
+
+      document.querySelector("#popular").append(div);
       // console.log(movie);
     });
 }
