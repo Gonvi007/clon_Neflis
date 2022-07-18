@@ -17,7 +17,7 @@
   </head>
   <body>
     <div id="app">
-      <nav class="navbar navbar-dark bg-black navbar-expand-lg bg-light">
+      <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="./img/logo.png" height="80" />
@@ -27,14 +27,14 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">TV Shows</a>
+              <li class="nav-item ms-3">
+                <a class="nav-link active" aria-current="page" href="#">Tv Shows</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Movies</a>
+              <li class="nav-item ms-3">
+                <a class="nav-link " href="#">Movies</a>
               </li>
-              <li class="nav-item">
-                <!--a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item ms-3 dropdown">
+                <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -42,19 +42,23 @@
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul-->
-                <select class="form-select form-select-sm mt-1 ms-3" name="categories" id="categories">
+                </ul> -->
+
+                <select class="mt-2" name="categories" id="categories">
                   <option disabled selected>Categories</option>
                 </select>
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control form-control-sm me-2" id="search" type="search" autocomplete="off" placeholder="Buscar.." aria-label="Search">
-              <button class="btn btn-danger btn-sm" type="submit"><i class="bi bi-search"></i></button>
+              <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+              <button class="btn btn-primary btn-sm" type="submit"><i class="bi bi-search"></i></button>
             </form>
           </div>
         </div>
       </nav>
+
+      
+      
       <div id="content">
         <div id="header" style="background-image: url('./img/cover.jpg')">
           <div id="header-content">
@@ -65,7 +69,7 @@
           </div>
         </div>
         <div id="categories-group">
-          <h3>Solución Bootstrap</h3>
+          <!-- <h3>Solución Bootstrap</h3>
           <div class="row">
               <div class="col-3">
                 <img src="./img/cover.jpg" width="100%" />
@@ -79,7 +83,7 @@
               <div class="col-3">
                 <img src="./img/cover.jpg" width="100%"  />
               </div>
-          </div>
+          </div> -->
           <h3>Most Popular</h3>
           <div class="row" id="popular">
             

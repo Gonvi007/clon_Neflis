@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  outline: 1px solid lightgreen;
+  /* outline: 1px solid lightgreen; */
 }
 body {
   background-color: #ccc;
@@ -14,10 +14,11 @@ h3 {
 #app {
   margin: auto;
   width: 40vw;
-  min-width: 580px;
+  min-width: 780px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
 }
 #header {
   border-top-left-radius: 20px;

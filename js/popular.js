@@ -1,3 +1,5 @@
+let movies_array = [];
+
 const renderMovies = (data) => {
     let movies = data.results;
     movies.forEach((movie) => {
@@ -25,5 +27,6 @@ const renderMovies = (data) => {
 fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`)
 .then((response) => response.json())
 .then((data) => {
+  movies_array = data.results;
   renderMovies(data);
 });
