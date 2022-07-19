@@ -22,7 +22,7 @@
           <a class="navbar-brand" href="#">
             <img src="./img/logo.png" height="80" />
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button id="buscar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -49,8 +49,9 @@
                 </select>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" id="search" type="search" placeholder="Buscar..." aria-label="Search">
+            <form class="d-flex" role="search" id="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search"
+              name="movieName">
               <button class="btn btn-primary btn-sm" type="submit"><i class="bi bi-search"></i></button>
             </form>
           </div>
@@ -118,5 +119,6 @@
     <script src="./js/popular.js"></script>
     <script src="./js/topRated.js"></script>
     <script src="./js/upcoming.js"></script>
+    <script src="./js/search.js"></script>
   </body>
 </html>
