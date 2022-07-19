@@ -3,7 +3,7 @@ let frmBuscar = document.querySelector("#search");
 
 
 
-const renderResults = () => {
+const renderResults = (results) => {
     console.log(results)
 
 }
@@ -11,12 +11,12 @@ const renderResults = () => {
 frmBuscar.addEventListener("submit", (event) => {
     event.preventDefault(); //Evita que se recargue y borre la información del boton.
 
-    const {movieName} = event.target
-    renderResults(movieName.value);
+    const { movieName } = event.target;
+    // renderResults(movieName.value);
             
     fetch(`${URL}/search/multi?api_key=${API_KEY}&query=${movieName.value}`)
         .then((response) => response.json())
-        .then((data) => console.log(data.results));
+        .then((data) => renderResults(data.results));
 });
 
 
@@ -61,5 +61,8 @@ users.filter(user => user.age > 20);
 // Regresa UN NUEVO array, pero no solo el valor solicitado.
 // 
 
-*/
+// Esto borraria todo lo de contenido de index.html para crear nuevas cosas.
+document.querySelector('#content').innerHTML = ""
 
+
+*/
