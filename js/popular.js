@@ -30,3 +30,8 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`)
   movies_array = data.results;
   renderMovies(data);
 });
+
+// movies_array.filter((movie) => {
+//   movie.genre_ids.includes(16))
+// };
+
