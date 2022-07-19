@@ -24,7 +24,8 @@ const users = [{name: 'Victor', age: 36, country: "SV"}, {name: 'Victor', age: 4
 
 users.filter(user => user.age > 20);
 
-// Regresa todo el array, no solo el valor solicitado.
+// Regresa UN NUEVO array, pero no solo el valor solicitado.
+// 
 
 */
 
