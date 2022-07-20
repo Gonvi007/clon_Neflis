@@ -1,11 +1,24 @@
-let frmBuscar = document.querySelector("#search");
+const frmBuscar = document.querySelector("#search");
 // https://api.themoviedb.org/3/search/multi?api_key=fa900030b5382f71a0cbc261e0a0490fquery=100
 
-
+const content = document.querySelector('#content');
 
 const renderResults = (results) => {
-    console.log(results)
+    content.innerHTML="";
 
+    let block = document.createElement('div')
+    block.classList.add('row', 'col-12', 'm-0')
+    block.setAttribute('id', 'categories-group');
+
+    content.appendChild(block)
+
+    results.forEach(movie => {
+        block.insertAdjacentHTML('beforeend', `
+        <div class="col-3 my-3">
+            <img src="${IMG_PREFIX}${movie.poster_path}" width="100%" />
+        </div>
+        `);
+    })
 }
 
 frmBuscar.addEventListener("submit", (event) => {
